@@ -28,3 +28,10 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Report test results
+        if: always() # Run this step even if tests fail
+        run: |
+          echo "Tests completed. Check the output above for results."
+          echo "Commit: ${{ github.sha }}"
+          echo "Branch: ${{ github.ref_name }}"

@@ -1,7 +1,7 @@
 // converter.js
 const RATES = {
   USD: 1,
-  EUR: 0.92,
+  EUR: 2.92,
   GBP: 0.79,
   JPY: 149.5,
   PHP: 56.8,
